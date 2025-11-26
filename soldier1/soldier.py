@@ -1,7 +1,7 @@
 
 
 class Soldier:
-    def __init__(self,personal_number,firs_name ,last_name,sex, city_of_residence, distance_base, placement_mode):
+    def __init__(self,personal_number,firs_name ,last_name,sex, city_of_residence, distance_base, placement_mode,room_number=None):
         self._personal_number = personal_number
         self.firs_name = firs_name
         self.last_name = last_name
@@ -9,6 +9,7 @@ class Soldier:
         self.city_of_residence = city_of_residence
         self.distance_base = distance_base
         self.placement_mode = placement_mode
+        self.room_number = room_number
     def get_personal_number(self):
         return self._personal_number
 
