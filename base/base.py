@@ -6,5 +6,5 @@ class Base:
         self.base = {}
 
     def add_residences(self, residences:residences.Residences ):
-        self.base[residences.number_room] = residences
+        self.base[residences.number_rooms] = residences
         
