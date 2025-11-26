@@ -23,11 +23,12 @@ def placement():
      data = make_base.make_base(num_residences)
      data1 = logic.get_info(data)
      info = logic.checking_every_soldier(data=data)
+     info = info.items()
      print(info)
-     return{'Registration was successful.\n'
-     'Number of registered soldiers \n',{data1[0]},
-     'Number of unregistered soldiers\n',{data1[1]}
-     ,'\n',json.dump.items}
+     return{'a':'Registration was successful.\n'
+     'Number of registered soldiers \n','b':{data1[0]},
+     'f':'Number of unregistered soldiers\n','c':{data1[1]}
+     }
      
 @app.get('/soldier_registration')
 def get_soldier_registration():
